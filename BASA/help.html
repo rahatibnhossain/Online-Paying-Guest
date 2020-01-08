@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"type="text/css" href="css/bootstrapt.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome To BASA</title>
+</head>
+<body>
+    
+    <nav>
+<div class="logo">
+    <a href="index.php" style="    text-decoration: none;
+    "><h4>BASA</h4></a>
+</div>
+
+<ul class="nav-links">
+    <li><a href="index.php">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="help.html">Help</a></li>
+    <li><div class="popbtn" id="btnsign">Sign Up</div></li>
+    <li><div class="popbtn" id="btnlo">Login</div></li>
+</ul>
+</nav>
+<br>
+<div class="head1">Welcome To BASA</div>
+
+<div class="pop">
+    <div class="pops">
+        <div class="close">+</div>
+        <img src="user.png" height="100px" width="100px">
+        <form action="">
+            <input type="text" placeholder="E-Mail" name="email">
+            <input type="Password" placeholder="Password"name="pass"> 
+            <a href="" class="button">Submit</a>
+        </form>
+    </div>
+</div>
+<div class="popsign">
+        <div class="popsi">
+            <div class="close1">+</div>
+            <img src="user.png" height="100px" width="100px">
+            <form action="">
+                <input type="text" placeholder="User Name">
+                <input type="text" placeholder="E-Mail">
+                <input type="Password" placeholder="Password"> 
+                <input type="Password" placeholder="Retype Password"> 
+                <a href="" class="button">Sign Up</a>
+            </form>
+        </div>
+    </div>
+
+
+
+<script>
+document.getElementById('btnlo').addEventListener('click',function(){
+document.querySelector('.pop').style.display="flex";
+});
+document.querySelector('.close').addEventListener("click",function(){
+    document.querySelector('.pop').style.display="none";
+}) ;
+
+document.getElementById('btnsign').addEventListener('click',function(){
+document.querySelector('.popsign').style.display="flex";
+});
+
+document.querySelector('.close1').addEventListener("click",function(){
+    document.querySelector('.popsign').style.display="none";
+}) ;
+
+
+</script>
+</body>
+</html>   
